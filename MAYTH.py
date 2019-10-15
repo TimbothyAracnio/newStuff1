@@ -42,3 +42,11 @@ for val in range(1, 6):
     acc = acc + val
 
 print(acc)
+
+
+# Compute the sum of the first 100 odd numbers
+# this is done by repeating the loop and printing the numbers
+for val in range(0, 101, 2):
+    print(val)
+
+
