@@ -64,11 +64,17 @@ acc = 0
 # Compute the average of the first 100 odd numbers
 # this takes and adds all of the odd numbers then divides them by how many
 # odd numbers there are, giving the average
+num = 0
 for val in range(1, 101, 2):
     acc = acc + val
-acc / 50
+    num = (val - (val - 1)) + num
+print(acc / num)
+
+
 
 # Write a function that returns the average of the first N numbers, where
+#   N is a parameter
+
 
 
 
