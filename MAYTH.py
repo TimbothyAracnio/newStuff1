@@ -42,11 +42,34 @@ for val in range(1, 6):
     acc = acc + val
 
 print(acc)
+acc = 0
 
 
-# Compute the sum of the first 100 odd numbers
-# this is done by repeating the loop and printing the numbers
+# Compute the sum of the first 100 even numbers
+# this is done by repeating the loop and printing the numbers as it loops
 for val in range(0, 101, 2):
-    print(val)
+    acc = acc + val
+print(acc)
+acc = 0  # Important to set acc back to zero otherwise it might die
+
+# Compute the sum of the first 50 odd numbers
+# this is done by pretty much the same thing as above accept adding one to
+# the numbers and swapping it from 101 to 51
+for val in range(1, 51, 2):
+    acc = acc + val
+print(acc)
+acc = 0
+
+
+# Compute the average of the first 100 odd numbers
+# this takes and adds all of the odd numbers then divides them by how many
+# odd numbers there are, giving the average
+for val in range(1, 101, 2):
+    acc = acc + val
+acc / 50
+
+# Write a function that returns the average of the first N numbers, where
+
+
 
 
