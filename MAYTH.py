@@ -65,7 +65,7 @@ acc = 0
 # this takes and adds all of the odd numbers then divides them by how many
 # odd numbers there are, giving the average
 num = 0
-for val in range(1, 101, 2):
+for val in range(1, 201, 2):
     acc = acc + val
     num = (val - (val - 1)) + num
 print(acc / num)
@@ -74,6 +74,36 @@ print(acc / num)
 
 # Write a function that returns the average of the first N numbers, where
 #   N is a parameter
+# This takes the average of the all of the numbers chosen in variable N
+def inpoot(N):
+    acc = 0
+    for val in range(0, N, 1):
+        acc = acc + val
+    print(acc/N)
+
+inpoot(8)
+
+# Write a function called factorial that computes the product of the first N
+#   numbers, where N is a parameter
+def factorial(N):
+    acc = 0
+    for val in range(0, N, 1):
+        acc = acc * val
+    print(acc)
+
+factorial(1)
+
+
+# Monte Carlo Simulation
+
+
+# random numbers
+
+import random
+
+print(random.random())
+
+
 
 
 
