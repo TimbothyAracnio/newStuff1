@@ -103,9 +103,52 @@ import random
 
 print(random.random())
 
+# Boolean Expression
+# <, <=, >, >=, ==, !=.
+# Compound statements
+# and, or, not
 
+dogeFatness = 18
+print(dogeFatness > 25)
+horseFatness = 215
 
+# if the statement is "and", both of the statements have to be true,
+#   otherwise it's false
+print(dogeFatness == 45 and horseFatness == 215)
 
+# if the statement is "or", either of the statements have to be true,
+#   otherwise it's false
+print(dogeFatness >= 25 or horseFatness >= 10)
 
+# if the statement is "not", it flips the answer from true to false and vise versa
+print(not horseFatness <= 200)
 
+# Decision making skills
 
+jeff = 19
+amy = 16
+harold = 23
+andy = 20
+rebbekah = 19
+ans = 0
+
+if jeff < 19:
+    if rebbekah >= 10:
+        ans = 300
+    else:
+        print("slippy slap")
+else:
+    ans = 400
+
+print(ans)
+
+# elif if you want to stack if statements
+thingy = 75
+if thingy > 100:
+    print("bigger than 100")
+elif thingy > 80:
+    print("bigger than 80")
+elif thingy > 45:
+    print("bigger than 45")
+else:
+    print("bigger than a lot.")
