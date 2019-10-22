@@ -132,6 +132,7 @@ andy = 20
 rebbekah = 19
 ans = 0
 
+# now we put else into the kahooky
 if jeff < 19:
     if rebbekah >= 10:
         ans = 300
@@ -152,3 +153,19 @@ elif thingy > 45:
     print("bigger than 45")
 else:
     print("bigger than a lot.")
+
+
+def montePi(numDarts):
+
+    inCircle = 0
+
+    for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+        if distance <= 1:
+            inCircle = inCircle + 1
+
+    pi = inCircle / numDarts * 4
+    return pi
